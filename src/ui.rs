@@ -625,7 +625,7 @@ impl InputHandler for Ui {
         }
 
         if ctrl && (key == KeyCode::C || key == KeyCode::X) {
-            self.clipboard.set(&self.clipboard_selection);
+            //self.clipboard.set(&self.clipboard_selection);
         }
 
         if key != KeyCode::Control && self.key_repeat.add_repeat_gap(key, self.time) {
